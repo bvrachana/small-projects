@@ -1,0 +1,285 @@
+/* common class for all examples */
+.common{
+    background-color: #edefea;
+    padding: 30px;
+    margin: 30px;
+    border:30px groove red ;
+}
+.title{
+    background-color:rgb(255, 187, 87);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* p1.html */
+.cssOutline{
+ outline: 50px ridge rgb(92, 222, 27);
+outline-offset: 30px ;
+}
+
+/*p3.html*/
+.cssOverflow>p{
+    text-align: justify;
+    line-height: 2;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: auto;  
+}
+.cssOverflow>p:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*p4.html*/
+.cssWhiteSpace{
+    white-space:pre-wrap;
+}
+/*p5.html*/
+.cssUnits .h1{
+  margin:0.5in; /* inches -1in equal to 2.54cm*/
+  background-color: #c61313;
+
+}
+.cssUnits .h2{
+    padding: 2cm;  /*centimeters*/
+    background-color: #dd2828;
+}
+.cssUnits .h3{
+    word-spacing: 10mm/*millimeter*/;
+}
+.cssUnits .h4{
+    font-size: 18pt; /*points*/
+}
+.cssUnits .h5{
+    font-size: 1pc; /*picas*/
+}
+.cssUnits .h6{
+    font-size: 30px;
+}
+/*p6.html*/
+.cssVisibiltyDisplay .cssVisibilty{
+    visibility: hidden; /*this will hides only the element*/
+}
+.cssVisibiltyDisplay .cssDisplay{
+    display: none; /*it will hides the element with that space*/
+}
+/*p7.html*/
+.cssWordwrap>p{
+padding: 30px;
+width: 300px;
+background-color: rgb(178, 34, 34)
+word-break:break-all;
+}
+/*p8.html*/
+.cssResize{
+    resize: both;
+    overflow: auto;
+}
+/*p9.html*/
+.cssColumnCount{
+    line-height: 2;
+    text-align: justify;
+   /* column-count: 4; */
+    column-gap: 50px;
+    column-rule:2px solid #0e0d0d;
+    column-width: 300px;
+}
+.cssColumnCount h1{
+    column-span:all;
+}
+/*p10.html*/
+.cssOpacity>p{
+background-color: rgba(134, 122, 224, 0.879);
+color: #ddd;
+padding: 30px;
+opacity: 0.5; /*opacity is used to make the transparent element */
+}
+/*p11.html*/
+.cssAttribute h1{
+color: brown;
+}
+.cssAttribute>p{
+    color: yellow;
+}
+.cssAttribute>p[title]{
+    background-color: #0e0d0d;
+    padding: 20px;
+}
+.cssAttribute>h1[title]{
+    background-color: teal;
+    padding: 20px;
+}
+/*example2*/
+.cssAttribute>p>abbr[id], .cssAttribute>p>em[title]{
+    background-color: #f21c1c;
+    padding: 40px;
+}
+/*example3*/
+.cssAttribute>form>input{
+    padding: 30px;
+}
+.cssAttribute>form>input[type]{
+    font-size: 2rem;
+}
+.cssAttribute>form>input[type="email"]{
+    background-color: #327ebd;
+}
+.cssAttribute>form>input[type="text"]{
+    background-color: #aeb8c0;
+}
+.cssAttribute>form>input[type="date"]{
+    background-color: #564d4d;
+    border-radius: 100px;
+    color: #ddd;
+}
+/*p12.html*/
+.cssAttribute>div>img[title~="cartoon"]{
+    width: 300px;
+    border-radius: 100px;
+}
+/*p13.html*/
+.cssAttribute>div>h1[class|="header"]{
+    background-color: #f35252;
+    padding: 30px;
+}
+/*p14.html*/
+.cssAttribute>section>h3[title^="heading"]{
+padding: 30px;
+background-color: aqua;
+}
+/*p15.html*/
+.cssPseudoclass>h1:active{
+    color: blue;
+    background-color: #e51a1a;
+}
+.cssPseudoclass>a:link{
+    color:#aeb8c0
+}
+.cssPseudoclass>a:hover{
+    color: yellow
+}
+.cssPseudoclass>a:active{
+    color:aqua
+}
+.cssPseudoclass>a:visited{
+    color:rgb(11, 228, 11);
+}
+/*p16.html*/
+.pseudoElement .s1 p::first-line{
+    font-size: 30px;
+    color: #dd2828;
+    background-color: #c5d32c;
+}
+.pseudoElement .s2 p::first-letter{
+    font-size: 50px;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+/*p17.html*/
+.pseudoElementH1 h1{
+    background-color: #14c0f9;
+    color: #dd2828;
+    width: fit-content;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pseudoElementH1 h1::before{
+    content: "this is the heading 1";
+    background-color: #14ee40;
+    padding: 30px;
+}
+.pseudoElementH1 h1::after{
+    content:"this is the heading 2" ;
+    width: 200px;
+    height: 200px;
+    background-color: #ceec0b;
+    padding: 30px;
+}
+/*p18.html*/
+.cssPosition h1{
+background-color:#2D3250 ;
+padding: 30px;
+color: #fff
+}
+.cssPosition>h1:first-child{
+    position: absolute;
+   top: 0;
+   right: 0;
+}
+.cssPosition .second{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.cssPosition{
+    min-height: 150vh;
+}
+.cssPosition div{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #16befb;
+}
+.cssPosition div h1{
+    width: fit-content;
+}
+.cssPosition div h1:first-child{
+    background-color: rgb(243, 19, 19)000;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.cssPosition div .fifth{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.cssPosition .eight{
+    background-color: #b60c0c;
+    position: sticky;
+    top:0px;
+}
+/*p20.html*/
+.zIndex section{
+width: 300px;
+padding: 30px;
+background-color: #545151;
+min-height: 300px;
+max-height: 300px;
+position: absolute;
+}
+.zIndex{
+    position: relative;
+}
+.zIndex  .first{
+  background-color:teal;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.zIndex .second{
+    background-color:red;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+.zIndex .third{
+background-color: purple;
+top: 100px;
+left: 100px;
+z-index: 3;
+}
+.zIndex .first:hover{
+    z-index: 4;
+}
+.zIndex .second:hover{
+    z-index: 4;
+}
+.zIndex .third:hover{
+    z-index: -1;
+}
