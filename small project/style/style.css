@@ -33,14 +33,12 @@ header nav ul li::before{
     position: absolute;
     width: 0%;
     height: 2px;  /* example1*/
-    background-color: #6d825c;
+    background-color: #95db5b;
     bottom: 0; 
-    left: 0; 
+   
 }
 header nav ul li:hover::before{
     width: 100%; /* example1*/
-    /* left: 0; // example2*/
-    /* top: 0;example3 */
     bottom: 0;
     transition: 1s;
 }
@@ -186,9 +184,9 @@ header nav ul button{
     height: 80px;
     border-radius: 100px;
     background-color: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 50%;
     top: 50%;
     color: #5F6F52;
@@ -268,5 +266,4 @@ footer ul li{
     cursor: pointer;
     transition: 0.8s;
     transform: rotate(360deg);
-
 }
