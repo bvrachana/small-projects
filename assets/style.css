@@ -237,7 +237,7 @@ color: #fff
 .cssPosition div .fifth{
     position: fixed;
     bottom: 0;
-    right: 0;
+    right:0;
 }
 .cssPosition .eight{
     background-color: #b60c0c;

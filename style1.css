@@ -47,8 +47,7 @@ position: static;
      display: flex;
      height: 800px;
      align-items: end;
-     
-}
+     =}
 p{
     font-size: 60px ;
      font-weight: bold;
@@ -89,7 +88,16 @@ button:hover{
     gap: 15px;
     font-weight: bold;
     color: #f4eded;
-     margin-left: 320px; 
+     margin-left: 320px;
+     animation: box 4s linear infinite;
+}
+@keyframes box{
+    from{
+        transform: translateX(400px);
+    }
+    to{
+        transform: translate(0px);
+    }
 }
 .circle:hover{
     color:rgb(14, 13, 13);
@@ -101,10 +109,9 @@ button:hover{
 .major h1{
     font-size: 3rem;
     line-height: 1.5;
-    color: black;
+    color: rgb(14, 13, 13);
     margin-top: 40px;
     padding: 30px;
-    
 }
 .major-list{
     padding: 20px;
@@ -146,12 +153,12 @@ button:hover{
 }
 .price-card{
     display: flex;
-    padding: 20px;
+    padding: 30px;
     align-items: center;
     column-width: 500px;
     column-gap: 80px;
     margin-top: 350px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .card1, .card2, .card3, .card4{
     list-style-position: inside;
@@ -161,6 +168,7 @@ button:hover{
     padding: 0px 70px;
     margin-top: 20px;
     font-size: 20px;
+    
 }
 .card2 h1,.card4 h1,.card1 h1{
     color:#000;
@@ -171,8 +179,10 @@ button:hover{
 .card1 h1, .card2 h1, .card3 h1, .card4 h1{
     display: flex;
     justify-content: center;
+    align-items:center;
     line-height: 2;
     margin-top: 30px;
+    position: relative;
     font-size: 40px;
 }
 .card1 h2, .card2 h2, .card3 h2, .card4 h2{
@@ -181,12 +191,46 @@ button:hover{
     font-size: 4.5rem;
     color: #e2c312ea;
 }
-.btn{
+.card4 {
+    animation: n 4s linear infinite;
+}
+@keyframes n{
+         from{
+            transform: translateX(300px);
+         }
+         to{
+            transform: translateX(0px);
+         }
+}
+.card2{
+    animation: s 5s linear infinite ;
+}
+@keyframes s{
+    from{
+       transform: translateX(-200px);
+    }
+    to{
+       transform: translateX(0px);
+    }
+}
+.card1{
+    animation:r 4s linear infinite;
+}
+@keyframes r{
+   from{
+    transform: translateX(-200px);
+   }
+   to{
+    transform: translateX(0px);
+   }
+}
+ .btn{
     background-color: #ffd900ea;
     color: #fff;
-    width: 250px;
+    width: 200px;
+    align-items: center;
     padding: 10px;
-}
+} 
 .card1{
     background-color: lightgray;
     min-height: 40vh;
@@ -199,4 +243,169 @@ button:hover{
     background-color: #6ae168cb;
     min-height: 40vh;
 }
-
+p{
+    font-size: 40px;
+     font-weight: bold;
+     margin-left: 80px;
+     margin-top: 70px;
+}
+.card5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 60px;
+}
+.box1>img{
+    position: absolute;
+    top: -20px; 
+     left: 5px;  
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    animation: image 5s ease infinite;
+}
+@keyframes image{
+    from{
+        transform: translateX(-900px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+.box2>img{
+    position: absolute;
+    top: -20px; 
+     left: 5px;  
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    animation: image 5s ease infinite;
+}
+.box1{
+    width: 500px;
+    height: 350px;
+    background-color: hsla(0, 33%, 93%, 0.438);
+   position: relative;
+}
+.box2{
+    width: 500px;
+    height: 350px;
+    background-color: hsla(0, 33%, 93%, 0.438);
+    position: relative;
+}
+ .box1 h1{
+  margin-left: 20px;
+  margin-top: 100px;
+ color: #000;
+}
+.box2 h1{
+    margin-left: 20px;
+    margin-top: 100px;
+   color: #000;
+}
+.box1 h2{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.box2 h2{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.fa-facebook{
+    color: rgb(8, 101, 19);
+   font-size: 40px;
+   padding: 15px;
+}
+.fa-instagram{
+    color: rgb(56, 103, 9);
+    font-size: 40px;
+    margin-left: 20px;
+}
+.fa-twitter{
+    color: rgb(44, 84, 3);
+    font-size: 40px;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(207, 182, 15, 0.959);
+    position: relative;
+}
+.container p{
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.container h1{
+    text-align: center;
+    color: black;
+    font-weight: 100;
+   padding: 0 0 0 80px;
+}
+.boxes{
+    width: 650px;
+    height: 350px;
+    background-color: #fdf9f9;
+    position: absolute;
+    left: 500px;
+    bottom: 90px;
+}
+.boxes p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 100;
+   margin-top: 0px;
+   text-align: center;
+   margin-left: 2px;
+}
+.boxes img{
+    position: absolute;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 180px;
+    margin-left: 250px;
+}
+.boxes h3{
+    position: absolute;
+    bottom: 30px;
+   text-align: center;
+    font-weight: bold;
+    margin-left: 220px;
+}
+figure{
+    display: inline;
+    left: 200px;
+    position: relative;
+}
+img{
+    padding: 10px;
+}
+h6{
+    font-size: 20px;
+   display: inline-block;
+   position: relative;
+   right:70%;
+   top: 40px;
+}
+h4{
+    color: rgb(11, 243, 11);
+    display: inline-block;
+    right : 69%;
+   top: 40px;
+   font-size: 20px;
+   position: relative;
+}
+button:hover{
+    background-color: #fdf9f9;
+    cursor: pointer;
+    color:black;
+    font-size: medium;
+}
+button{
+    background-color: yellow;
+     color: black;
+      margin-left: 150px;
+       margin-top: 60px; 
+       font-size: 20px;
+}
